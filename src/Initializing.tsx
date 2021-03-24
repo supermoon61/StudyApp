@@ -4,13 +4,12 @@ import {
   Text,
   StyleSheet,
   Image,
-  AsyncStorage
 } from 'react-native'
 
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 
-
-import { goToAuth, goHome } from './navigation'
+import { goToAuth, goHome, goToSwiper } from './navigation'
 
 import { USER_KEY } from './config'
 
@@ -43,19 +42,21 @@ setTimeout(function() {
         style={styles.logo}
         source={require('../assets/logo.png')}
       />
-        <Text style={styles.welcome}>STUDY HUNT</Text>
+      <View style={styles.title}>
+      <Text style={styles.blackText}>STUDY</Text>
+        <Text style={styles.greenText}> HUNT</Text>
+      </View>
+       
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  welcome: {
-    fontSize: 24,
+  title: {
     padding:10,
-    fontFamily: 'Nunito-Bold',
-    
-
+    flexDirection: 'row',
+    justifyContent: 'center'
   },
   container: {
     flex: 1,
@@ -63,10 +64,22 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logo: {
-    width: 80,
-    height: 80,
+    width: 100,
+    height: 100,
     
   },
+  blackText:{
+    color: '#000000',
+    fontSize: 24,
+    fontFamily: 'Nunito-Black',
+ 
+  },
+  greenText:{
+    color: '#08bd80',
+    fontSize: 24,
+    fontFamily: 'Nunito-Black',
+
+  }
 })
 
 

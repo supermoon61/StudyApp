@@ -23,6 +23,7 @@ export function registerScreens( ) {
   console.log(store);
   Navigation.registerComponent("PostsList", reduxStoreWrapper(PostsList, store))
   Navigation.registerComponent('Home', () => require('./Home').default);
+ 
   Navigation.registerComponent('Initializing', () => require('./Initializing').default);
   Navigation.registerComponent('SignIn', () => require('./SignIn').default);
   Navigation.registerComponent('SignUp', () => require('./SignUp').default);

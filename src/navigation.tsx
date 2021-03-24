@@ -49,6 +49,21 @@ export const goHome = () => Navigation.setRoot({
   }
 })
 
+export const goToSwiper = () => Navigation.setRoot({
+  root: {
+    stack: {
+      id: 'App',
+      children: [
+        {
+          component: {
+            name: 'Swiper',
+          }
+        }
+    ],
+    }
+  }
+})
+
 export const goToForgotPassword = () => Navigation.setRoot({
   root: {
     stack: {

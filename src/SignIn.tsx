@@ -31,14 +31,21 @@ export default class Login extends Component {
         <View style={styles.container}>
           
             <View style={styles.fieldContainer}>
-              <Text style={styles.label}>Enter your username</Text>
+              <Text style={styles.label}>Enter username</Text>
+              <TextInput
+                onChangeText={(username) => this.setState({ username })}
+                style={styles.textInput}
+              />
+            </View>
+            <View style={styles.fieldContainer}>
+              <Text style={styles.label}>Enter password</Text>
               <TextInput
                 onChangeText={(username) => this.setState({ username })}
                 style={styles.textInput}
               />
             </View>
 
-            <Button title="Login" color="#0064e1" onPress={goHome} />
+            <Button  title="Login" color="#0064e1" onPress={goHome}  />
 
             <TouchableOpacity onPress={goToForgotPassword}>
               <View >
@@ -72,6 +79,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   textInput: {
+    width:280,
     height: 40,
     marginTop: 5,
     marginBottom: 10,
@@ -80,4 +88,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#eaeaea",
     padding: 5,
   },
+  button:{
+    width:280,
+    flex:1,
+  }
 });
