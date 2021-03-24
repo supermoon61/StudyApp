@@ -1,0 +1,14 @@
+com/studyapp/MainActivity.java
+ com.studyapp.MainActivity
+com/studyapp/ReactNativeFlipper.java
+ com.studyapp.ReactNativeFlipper
+ com.studyapp.ReactNativeFlipper$1
+ com.studyapp.ReactNativeFlipper$2
+ com.studyapp.ReactNativeFlipper$2$1
+com/studyapp/MainApplication.java
+ com.studyapp.MainApplication
+ com.studyapp.MainApplication$1
+com/studyapp/BuildConfig.java
+ com.studyapp.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
