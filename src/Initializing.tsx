@@ -18,20 +18,23 @@ export default class Initialising extends React.Component {
     try {
       const user = await AsyncStorage.getItem(USER_KEY)
       console.log('user: ', user)
-      var delayInMilliseconds = 3000; //1 second
+      var delayInMilliseconds = 2000; //1 second
 
 setTimeout(function() {
   //your code to be executed after 1 second
    if (user) {
         goHome()
       } else {
-        goToAuth()
+       // goToAuth()
+        goToSwiper()
+    
       }
 }, delayInMilliseconds);
      
     } catch (err) {
       console.log('error: ', err)
       goToAuth()
+     
     }
   }
 

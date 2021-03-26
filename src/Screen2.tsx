@@ -6,7 +6,7 @@ import {
   StyleSheet,
 } from 'react-native'
 import { goToAuth } from './navigation'
-import { Auth } from 'aws-amplify'
+
 import {Navigation} from 'react-native-navigation';
 
 import { USER_KEY } from './config'

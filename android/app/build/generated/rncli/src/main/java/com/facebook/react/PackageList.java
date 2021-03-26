@@ -17,6 +17,10 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import io.invertase.firebase.RNFirebasePackage;
 // react-native-navigation
 import com.reactnativenavigation.react.NavigationPackage;
+// react-native-svg
+import com.horcrux.svg.SvgPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 
 public class PackageList {
   private Application application;
@@ -64,7 +68,9 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
       new RNFirebasePackage(),
-      new NavigationPackage(reactNativeHost)
+      new NavigationPackage(reactNativeHost),
+      new SvgPackage(),
+      new VectorIconsPackage()
     ));
   }
 }

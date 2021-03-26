@@ -56,7 +56,15 @@ export const goToSwiper = () => Navigation.setRoot({
       children: [
         {
           component: {
-            name: 'Swiper',
+            name: 'Onboarding',
+            options: {
+              // Optional options object to configure the screen
+              topBar: {
+                visible: false,
+                drawBehind: true,
+                animate: false,
+              },
+            },
           }
         }
     ],
